@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8F4803</color>
+    <color name="colorPrimaryDark">#653200</color>
+    <color name="colorAccent">#CB3200</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_light_gray">#F2F2F2</color>
+    <color name="tab_text_color">#0A8F4803</color>
+    <color name="tab_selected_text_color">#FFEB3B</color>
+    <color name="table_status_color_available">#4CAF50</color>
+    <color name="table_status_color_un_available">#EE1708</color>
+</resources>

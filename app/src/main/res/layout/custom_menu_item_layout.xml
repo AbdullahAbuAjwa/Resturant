@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/_4sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/_2sdp"
+    app:cardCornerRadius="@dimen/_4sdp"
+    app:cardUseCompatPadding="true"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/custom_menu_item_iv"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/rest_logo"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="@dimen/_2sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/custom_menu_item_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:text="TextView"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toStartOf="@+id/custom_menu_item_tv_price"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/custom_menu_item_iv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/custom_menu_item_tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/custom_menu_item_tv_price"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/custom_menu_item_iv"
+        app:layout_constraintTop_toBottomOf="@+id/custom_menu_item_tv_title" />
+
+    <TextView
+        android:padding="@dimen/_4sdp"
+        android:background="@drawable/custom_menu_item_price_shape"
+        android:textColor="@color/colorAccent"
+        android:layout_margin="@dimen/_8sdp"
+        android:id="@+id/custom_menu_item_tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/custom_menu_item_iv_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_plus" />
+
+    <ImageView
+        android:id="@+id/custom_menu_item_iv_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/custom_menu_item_iv_plus"
+        app:layout_constraintEnd_toStartOf="@+id/custom_menu_item_tv_number"
+        app:layout_constraintTop_toTopOf="@+id/custom_menu_item_iv_plus"
+        app:srcCompat="@drawable/ic_minus" />
+
+    <TextView
+        android:id="@+id/custom_menu_item_tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="0"
+        android:textColor="#8F4803"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/custom_menu_item_iv_plus"
+        app:layout_constraintEnd_toStartOf="@+id/custom_menu_item_iv_plus"
+        app:layout_constraintTop_toTopOf="@+id/custom_menu_item_iv_plus" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="@dimen/_8sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.RegisterActivity">
+
+    <EditText
+        android:id="@+id/register_et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/login_et_email_hint"
+        android:padding="@dimen/_8sdp"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/login_et_username_password_background_shape"
+android:layout_margin="@dimen/_4sdp"
+        />
+
+    <EditText
+        android:id="@+id/register_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/login_et_password_hint"
+        android:padding="@dimen/_8sdp"
+        android:gravity="center"
+        android:background="@drawable/login_et_username_password_background_shape"
+        android:layout_margin="@dimen/_4sdp"
+        />
+
+    <EditText
+        android:id="@+id/register_et_repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/login_et_re_password_hint"
+        android:padding="@dimen/_8sdp"
+        android:gravity="center"
+        android:background="@drawable/login_et_username_password_background_shape"
+        android:layout_margin="@dimen/_4sdp"
+        />
+
+    <Button
+        android:id="@+id/register_btn_save"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_4sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_btn_register_background_shape"
+        android:textColor="@color/color_white"
+        android:text="Save" />
+</LinearLayout>
